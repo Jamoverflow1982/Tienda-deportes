@@ -42,6 +42,13 @@ header{
         --bs-btn-hover-bg: #805a8b;
         --bs-btn-hover-border-color: #805a8b;
     }
+    .fa-circle-user{
+        position:absolute;
+        padding-top: 1.8vh;
+    }
+    .fa-circle-user:hover{
+        font-size: 200%;
+    }
     [data-bs-theme=dark] {
         --bs-secondary-color: #805a8bb4;
     }
@@ -174,3 +181,42 @@ main{
         }
     }
 }
+footer{
+    background-color: #805a8b;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 2vh;
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        li{
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+    img{
+        width: 40vh;
+        height: auto;
+    }
+    .fa-facebook, .fa-instagram{
+        font-size: 8vh;
+    }
+    .fa-whatsapp{
+        position: fixed;
+        bottom: 5vh;
+        right: 2vh;
+        font-size: 8vh;
+    }
+}   
