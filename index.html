@@ -173,10 +173,13 @@
     <footer>
         <div>
             <h3>Newsletter</h3>
-            <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">E-Mail</label>
-            </div>
+            <form class="newsletterEmail">
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su email">
+                    <div id="emailHelp" class="form-text d-none">We'll never share your email with anyone else.</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Suscribirme</button>
+            </form>
         </div>
         <div>
             <a href="#"><img src="./assets/img/logo.png" alt="Logo Tienda de Arqueros Clemente"></a>
