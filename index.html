@@ -25,16 +25,15 @@
                         <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Nosotros</a>
+                        <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Productos</a>
+                        <a class="nav-link" href="./pages/productos.html">Productos</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping fa-bounce fa-xl" style="color: #f5a8a8;"></i></a>
+                    <li class="nav-item carrito">
                     </li>
                     <li>
-                        <a class="nav-link" href="#"><i class="fa-solid fa-circle-user fa-xl" style="color: #ffffff;"></i></a>
+                        <a class="nav-link" href="./pages/login.html"><i class="fa-solid fa-circle-user fa-xl" style="color: #ffffff;"></i></a>
                     </li>
                 </ul>
             </div>
@@ -131,44 +130,52 @@
             <div class="cardVenta item1">
                 <img src="./assets/img/productos/adidas-botas-de-futbol-predator-league-fold-over-tongue-fg-mg.webp" alt="Botines Adidas Predator">
                 <p class="tituloProducto">Adidas Botines de fútbol Predator League Fold Over Tongue FG/MG</p>
-                <p class="precioProducto">Precio: <span></span></p>
-                <div class="btnAgregar">
-                    <a href="">Agregar a Carrito</a>
+                <p class="precioProducto">Precio: <span class="precio">$249.999</span></p>
+                <div class="btnAgregar" id="btnAgregarBotinesAdidas" data-nombre="Adidas Botines de fútbol Predator League Fold Over Tongue FG/MG" data-precio="150000">
+                    <a id="btnAgregarBotinesAdidas" data-nombre="Adidas Botines de fútbol Predator League Fold Over Tongue FG/MG" data-precio="150000" href="">Agregar a Carrito</a>
                 </div>
             </div>
             <div class="cardVenta item2">
                 <img src="./assets/img/productos/adidas-guantes-de-portero-predator-pro.webp" alt="Guantes Adidas Predator">
                 <p class="tituloProducto">Adidas Guantes de arquero Predator Pro</p>
-                <p class="precioProducto">Precio: <span></span></p>
-                <div class="btnAgregar">
-                    <a href="">Agregar a Carrito</a>
+                <p class="precioProducto">Precio: <span class="precio">$149.999</span></p>
+                <div class="btnAgregar" id="btnAgregarGuatesAdidas" data-nombre="Adidas Guantes de arquero Predator Pro" data-precio="149999">
+                    <a id="btnAgregarGuatesAdidas" data-nombre="Adidas Guantes de arquero Predator Pro" data-precio="149999" href="">Agregar a Carrito</a>
                 </div>
             </div>
             <div class="cardVenta item3">
                 <img src="./assets/img/productos/puma-espinilleras-ultra-flex.webp" alt="Canilleras Puma">
                 <p class="tituloProducto">Puma Canilleras Ultra Flex</p>
-                <p class="precioProducto">Precio: <span></span></p>
-                <div class="btnAgregar">
-                    <a href="">Agregar a Carrito</a>
+                <p class="precioProducto">Precio: <span class="precio">$44.999</span></p>
+                <div class="btnAgregar" id="btnAgregarCanillerasPuma" data-nombre="Puma Canilleras Ultra Flex" data-precio="44999">
+                    <a id="btnAgregarCanillerasPuma" data-nombre="Puma Canilleras Ultra Flex" data-precio="44999" href="">Agregar a Carrito</a>
                 </div>
             </div>
             <div class="cardVenta item4">
                 <img src="./assets/img/productos/adidas-mochila-tiro-l.webp" alt="Mochila Adidas">
                 <p class="tituloProducto">Adidas Mochila Tiro L</p>
-                <p class="precioProducto">Precio: <span></span></p>
-                <div class="btnAgregar">
-                    <a href="">Agregar a Carrito</a>
+                <p class="precioProducto">Precio: <span class="precio">$35.999</span></p>
+                <div class="btnAgregar" data-nombre="Adidas Mochila Tiro L" data-precio="35999">
+                    <a id="btnAgregarMochilaAdidas" data-nombre="Adidas Mochila Tiro L" data-precio="35999" href="">Agregar a Carrito</a>
                 </div>
             </div>
             <div class="cardVenta item5">
                 <img src="./assets/img/productos/rinat-guantes-de-portero-the-boss-stellar-pro.webp" alt="Guantes Rinat">
                 <p class="tituloProducto">Rinat Guantes de arquero The Boss Stellar Pro</p>
-                <p class="precioProducto">Precio: <span></span></p>
-                <div class="btnAgregar">
-                    <a href="">Agregar a Carrito</a>
+                <p class="precioProducto">Precio: <span class="precio">$105.000</span></p>
+                <div class="btnAgregar" id="btnAgregarGuantesRinat" data-nombre="Rinat Guantes de arquero The Boss Stellar Pro" data-precio="105000">
+                    <a id="btnAgregarGuantesRinat" data-nombre="Rinat Guantes de arquero The Boss Stellar Pro" data-precio="105000" href="">Agregar a Carrito</a>
                 </div>
             </div>
         </section>
+        <!-- Flexbox container for aligning the toasts -->
+        <div class="toast-container position-fixed top-0 start-50 translate-middle-x p-3">
+            <!-- Then put toasts within -->
+            <div class="toast" id="toastCarrito" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-body">
+                </div>
+            </div> 
+        </div>
     </main>
     <footer>
         <div>
@@ -193,6 +200,7 @@
             </ul>
         </div>
     </footer>
+    <script src="./js/agregar.js"></script>
     <script src="./js/bootstrap.min.js"></script>
 </body>
 </html>

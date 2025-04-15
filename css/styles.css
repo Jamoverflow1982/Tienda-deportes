@@ -12,7 +12,7 @@
 }
 
 body{
-    background-color: rgb(254, 246, 255);
+    background-color: #fef6ff;
     }
 header{
     .bg-primary {
@@ -52,10 +52,32 @@ header{
     [data-bs-theme=dark] {
         --bs-secondary-color: #805a8bb4;
     }
+    .carrito{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .carritoItems{
+            position: absolute;
+            margin: auto;
+            margin-top: 4vh;
+        }
+    }
 }
 main{
     h1{
         display: none;
+    }
+    .toast-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        img{
+            width: 10vh;
+            height: auto;
+        }
     }
     .carrouselProductos{
         margin: 1vh;
@@ -88,7 +110,6 @@ main{
         grid-template-rows: 1fr;
         grid-template-areas: 
         "guante botin indu acc";
-
     }
     .div1 { grid-area: guante; }
     .div2 { grid-area: botin; }
@@ -164,6 +185,10 @@ main{
         }
         .precioProducto{
             font-family: Roboto;
+            .precio{
+                color: #ff00d4;
+                font-size: 1.5em;
+            }
         }
         .btnAgregar{
             width: 80%;
@@ -177,6 +202,68 @@ main{
             a{
                 text-decoration: none;
                 color: white;
+            }
+        }
+        .btnAgregar:hover{
+            background-color: #6a0085;
+        }
+    }
+    .container{
+        .totalCompraFinal{
+            color: #ff00d4;
+            font-size: 1.2em;
+        }
+    }
+    .text-center{
+        font-family: Roboto;
+        font-size: 1.5em;
+        color: #ffffff;
+        margin: 1vh;
+        padding: 1vh;
+        border: #805a8b 1px solid;
+        border-radius: 10px;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 2vh;
+        padding: 2vh;
+        border: #48324e 1px solid;
+        border-radius: 10px;
+        background-color: #805a8b;
+    }
+    .login{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 2vh;
+        padding: 2vh;
+        border: #48324e 1px solid;
+        border-radius: 10px;
+        background-image: url("../assets/img/campo.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 2vh;
+            padding: 2vh;
+            border: #805a8b 1px solid;
+            border-radius: 10px;
+            background-color: #ffffff;
+            opacity: 0.8;
+            input{
+                margin: 0;
+            }
+            p{
+                padding-top: 2vh;
             }
         }
     }
