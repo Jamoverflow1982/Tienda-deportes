@@ -15,7 +15,7 @@ function cantidadItemsCarrito() {
         carritoItems.innerHTML = `
             <a class="nav-link active" href="../pages/carrito.html"><i class="fa-solid fa-cart-shopping fa-bounce fa-xl" style="color: #f5a8a8;"></i></a>
             <div class="carritoItems">
-                <a href="./pages/carrito.html"><span class="badge rounded-pill bg-danger">${numItems}</span></a>
+                <a href="../pages/carrito.html"><span class="badge rounded-pill bg-danger">${numItems}</span></a>
             </div>
         `;
     }

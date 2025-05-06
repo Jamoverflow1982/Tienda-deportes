@@ -42,40 +42,100 @@
     <main>
         <h2>Nuestros Productos</h2>
         <section id="guantes">
-
+            <h3>Guantes</h3>
+            <div class="productosPag">
+                <div class="cardVenta">
+                    <img src="../assets/img/productos/adidas-guantes-de-portero-predator-pro.webp" alt="Guantes Adidas Predator">
+                    <p class="tituloProducto">Adidas Guantes de arquero Predator Pro</p>
+                    <p class="precioProducto">Precio: <span class="precio">$149.999</span></p>
+                    <div class="btnAgregar" id="btnAgregarGuatesAdidas" data-nombre="Adidas Guantes de arquero Predator Pro" data-precio="149999">
+                        <a id="btnAgregarGuatesAdidas" data-nombre="Adidas Guantes de arquero Predator Pro" data-precio="149999" href="">Agregar a Carrito</a>
+                    </div>
+                </div>
+                <div class="cardVenta">
+                    <img src="../assets/img/productos/rinat-guantes-de-portero-the-boss-stellar-pro.webp" alt="Guantes Rinat">
+                    <p class="tituloProducto">Rinat Guantes de arquero The Boss Stellar Pro</p>
+                    <p class="precioProducto">Precio: <span class="precio">$105.000</span></p>
+                    <div class="btnAgregar" id="btnAgregarGuantesRinat" data-nombre="Rinat Guantes de arquero The Boss Stellar Pro" data-precio="105000">
+                        <a id="btnAgregarGuantesRinat" data-nombre="Rinat Guantes de arquero The Boss Stellar Pro" data-precio="105000" href="">Agregar a Carrito</a>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="botines">
-
+            <h3>Botines</h3>
+            <div class="productosPag">
+                <div class="cardVenta">
+                    <img src="../assets/img/productos/adidas-botas-de-futbol-predator-league-fold-over-tongue-fg-mg.webp" alt="Botines Adidas Predator">
+                    <p class="tituloProducto">Adidas Botines de fútbol Predator League Fold Over Tongue FG/MG</p>
+                    <p class="precioProducto">Precio: <span class="precio">$249.999</span></p>
+                    <div class="btnAgregar" id="btnAgregarBotinesAdidas" data-nombre="Adidas Botines de fútbol Predator League Fold Over Tongue FG/MG" data-precio="150000">
+                        <a id="btnAgregarBotinesAdidas" data-nombre="Adidas Botines de fútbol Predator League Fold Over Tongue FG/MG" data-precio="150000" href="">Agregar a Carrito</a>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="indumentaria">
-
+            <h3>Indumentaria</h3>
+            <div class="productosPag">
+                <div class="cardVenta">
+                    <img src="../assets/img/productos/adidas-mochila-tiro-l.webp" alt="Mochila Adidas">
+                    <p class="tituloProducto">Adidas Mochila Tiro L</p>
+                    <p class="precioProducto">Precio: <span class="precio">$35.999</span></p>
+                    <div class="btnAgregar" data-nombre="Adidas Mochila Tiro L" data-precio="35999">
+                        <a id="btnAgregarMochilaAdidas" data-nombre="Adidas Mochila Tiro L" data-precio="35999" href="">Agregar a Carrito</a>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="accesorios">
-
+            <h3>Accesorios</h3>
+            <div  class="productosPag">  
+                <div class="cardVenta">
+                    <img src="../assets/img/productos/puma-espinilleras-ultra-flex.webp" alt="Canilleras Puma">
+                    <p class="tituloProducto">Puma Canilleras Ultra Flex</p>
+                    <p class="precioProducto">Precio: <span class="precio">$44.999</span></p>
+                    <div class="btnAgregar" id="btnAgregarCanillerasPuma" data-nombre="Puma Canilleras Ultra Flex" data-precio="44999">
+                        <a id="btnAgregarCanillerasPuma" data-nombre="Puma Canilleras Ultra Flex" data-precio="44999" href="">Agregar a Carrito</a>
+                    </div>
+                </div>
+            </div>
         </section>
+        <!-- Flexbox container for aligning the toasts -->
+        <div class="toast-container position-fixed top-0 start-50 translate-middle-x p-3">
+            <!-- Then put toasts within -->
+            <div class="toast" id="toastCarrito" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-body">
+                </div>
+            </div> 
+        </div>
     </main>
     <footer>
-        <div>
-            <h3>Newsletter</h3>
-            <form class="newsletterEmail">
-                <div class="mb-3">
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su email">
-                    <div id="emailHelp" class="form-text d-none">We'll never share your email with anyone else.</div>
-                </div>
-                <button type="submit" class="btn btn-primary">Suscribirme</button>
-            </form>
+        <div class="contenedorFooter">
+            <div>
+                <a href="../index.html"><img src="../assets/img/logo.png" alt="Logo Tienda de Arqueros Clemente"></a>
+            </div>
+            <div>
+                <h3>Newsletter</h3>
+                <form class="newsletterEmail">
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su email">
+                        <div id="emailHelp" class="form-text d-none">We'll never share your email with anyone else.</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Suscribirme</button>
+                </form>
+            </div>
+            <div>
+                <h3>Contactanos</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/clemente_arqueros/" target="_blank"><i class="fa-brands fa-instagram" style="color: #ff66d6;"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-whatsapp fa-shake" style="color: #2eff3c;"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-circle-up" style="color: #ee4c0caf;"></i></a></li>
+                    <li><a href="https://www.facebook.com/clementearqueros" target="_blank"><i class="fa-brands fa-facebook" style="color: #7aabff;"></i></a></li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <a href="../index.html"><img src="../assets/img/logo.png" alt="Logo Tienda de Arqueros Clemente"></a>
-        </div>
-        <div>
-            <h3>Contactanos</h3>
-            <ul>
-                <li><a href="https://www.instagram.com/clemente_arqueros/" target="_blank"><i class="fa-brands fa-instagram" style="color: #ff66d6;"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-whatsapp fa-shake" style="color: #2eff3c;"></i></a></li>
-                <li><a href="https://www.facebook.com/clementearqueros" target="_blank"><i class="fa-brands fa-facebook" style="color: #7aabff;"></i></a></li>
-            </ul>
-        </div>
+        <a href="https://github.com/Jamoverflow1982" target="_blank">©Todos los derechos reservados - Javier Monzon - 2025</a>
     </footer>
     <script src="../js/agregar.js"></script>
     <script src="../js/bootstrap.min.js"></script>
