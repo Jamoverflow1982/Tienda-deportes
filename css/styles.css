@@ -246,7 +246,7 @@ main{
         border-radius: 10px;
         background-color: #805a8b;
     }
-    .login{
+    .login, .registro{
         display: flex;
         flex-direction: column;
         justify-content: center;
