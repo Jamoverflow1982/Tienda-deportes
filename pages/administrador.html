@@ -44,6 +44,24 @@
         <h3>Administrador</h3>
         <section class="articulos">
             <h4>Lista de articulos</h4>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Descripcion</th>
+                        <th scope="col">Imagen</th>
+                        <th scope="col">Categoria</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Disponible</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaArticulos">
+                    <!-- Los articulos se cargaran aqui -->
+                </tbody>
+            </table>
         </section>
         <section class="usuarios">
             <h4>Lista de usuarios</h4>
@@ -76,6 +94,7 @@
         </div>
         <a href="https://github.com/Jamoverflow1982" target="_blank">©Todos los derechos reservados - Javier Monzon - 2025</a>
     </footer>
+    <script src="../js/administrador.js"></script>
     <script src="../js/carrito.js"></script>
     <script src="../js/bootstrap.min.js"></script>
 </body>
