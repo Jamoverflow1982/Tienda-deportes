@@ -1,4 +1,5 @@
-const API_URL = "http://localhost:8080/api/articulo";
+const API_URL = "http://localhost:8080/api/articulos";
+
 const tablaArticulos = document.getElementById("tablaArticulos");
 const formularioArticulo = document.getElementById("formularioArticulo");
 const tituloFormulario = document.getElementById("tituloFormulario");
@@ -11,6 +12,7 @@ const botonActualizar = document.getElementById("botonActualizar");
 const botonEliminarTodo = document.getElementById("botonEliminarTodo");
 const botonCerrarSesion = document.getElementById("botonCerrarSesion");
 const usuario = JSON.parse(localStorage.getItem("usuario"));
+
 if (!usuario || !usuario.admin) {
     alert("Acceso denegado. Debes ser un administrador para acceder a esta página.");
     window.location.href = "../index.html";
@@ -26,7 +28,11 @@ function cargarArticulos() {
                     <td>${articulo.id}</td>
                     <td>${articulo.nombre}</td>
                     <td>${articulo.precio}</td>
-                    <td>${articulo.stock}</td>
+                    <td>${articulo.descripcion}</td>
+                    <td><img src="${articulo.imagen}" alt="${articulo.nombre}" class="img-thumbnail" style="width: 100px;"></td>
+                    <td>${articulo.cantidad}</td>
+                    <td>${articulo.categoria}</td>
+                    <td>${articulo.disponible ? "Sí" : "No"}</td>
                     <td>
                         <button class="btn btn-primary" onclick="editarArticulo(${articulo.id})">Editar</button>
                         <button class="btn btn-danger" onclick="eliminarArticulo(${articulo.id})">Eliminar</button>

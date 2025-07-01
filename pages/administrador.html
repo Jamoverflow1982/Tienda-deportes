@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito - Tienda de Arqueros Clemente</title>
+    <title>Administrar Usuarios y Articulos - Tienda de Arqueros Clemente</title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/f5b20c2d74.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -62,6 +62,46 @@
                     <!-- Los articulos se cargaran aqui -->
                 </tbody>
             </table>
+            <button class="btn btn-primary" id="btnAgregarArticulo">Agregar Articulo</button>
+            <div id="formularioArticulo" class="d-none">
+                <form id="formArticulo">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="precio" class="form-label">Precio</label>
+                        <input type="number" class="form-control" id="precio" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="descripcion" class="form-label">Descripcion</label>
+                        <textarea class="form-control" id="descripcion" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="imagen" class="form-label">Imagen URL</label>
+                        <input type="text" class="form-control" id="imagen">
+                    </div>
+                    <div class="mb-3">
+                        <label for="categoria" class="form-label">Categoria</label>
+                        <input type="text" class="form-control" id="categoria">
+                    </div>
+                    <div class="mb-3">
+                        <label for="cantidad" class="form-label">Cantidad</label>
+                        <input type="number" class="form-control" id="cantidad">
+                    </div>
+                    <button type="submit" class="btn btn-success">Guardar Articulo</button>
+                </form>
+            </div>
+            <div>
+                <h4>Buscar Articulo</h4>
+                <input type="text" id="buscarArticulo" class="form-control" placeholder="Buscar por nombre">
+            </div>
+            <div>
+                <button class="btn btn-primary" id="btnBuscarArticulo">Buscar</button>
+            </div>
+            <div>
+                <button class="btn btn-danger" id="btnEliminarArticulos">Eliminar Todos</button>
+            </div>
         </section>
         <section class="usuarios">
             <h4>Lista de usuarios</h4>
